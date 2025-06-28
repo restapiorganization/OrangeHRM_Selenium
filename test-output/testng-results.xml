@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-28T07:55:50 IST" name="Suite" finished-at="2025-06-28T07:56:12 IST" duration-ms="22132">
+    <groups>
+    </groups>
+    <test started-at="2025-06-28T07:55:50 IST" name="Test" finished-at="2025-06-28T07:56:02 IST" duration-ms="12477">
+      <class name="script.Test2">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.Test2@f0da945]" started-at="2025-06-28T07:55:57 IST" name="preCondition" finished-at="2025-06-28T07:56:02 IST" duration-ms="4393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void script.Test2.testB()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qa.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="testB()[pri:0, instance:script.Test2@f0da945]" started-at="2025-06-28T07:56:02 IST" name="testB" finished-at="2025-06-28T07:56:02 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.Test2@f0da945]" started-at="2025-06-28T07:56:02 IST" name="postCondition" finished-at="2025-06-28T07:56:02 IST" duration-ms="731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB status=SUCCESS method=Test2.testB()[pri:0, instance:script.Test2@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- script.Test2 -->
+      <class name="script.Test1">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.Test1@434a63ab]" started-at="2025-06-28T07:55:50 IST" name="preCondition" finished-at="2025-06-28T07:55:54 IST" duration-ms="4566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void script.Test1.testA()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qa.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="testA()[pri:0, instance:script.Test1@434a63ab]" started-at="2025-06-28T07:55:54 IST" name="testA" finished-at="2025-06-28T07:55:56 IST" duration-ms="1789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.Test1@434a63ab]" started-at="2025-06-28T07:55:56 IST" name="postCondition" finished-at="2025-06-28T07:55:57 IST" duration-ms="947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=Test1.testA()[pri:0, instance:script.Test1@434a63ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- script.Test1 -->
+    </test> <!-- Test -->
+    <test started-at="2025-06-28T07:56:02 IST" name="Testconfig" finished-at="2025-06-28T07:56:12 IST" duration-ms="9624">
+      <class name="script.Test2">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.Test2@783a467b]" started-at="2025-06-28T07:56:10 IST" name="preCondition" finished-at="2025-06-28T07:56:12 IST" duration-ms="1316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void script.Test2.testB()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[config.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="testB()[pri:0, instance:script.Test2@783a467b]" started-at="2025-06-28T07:56:12 IST" name="testB" finished-at="2025-06-28T07:56:12 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.Test2@783a467b]" started-at="2025-06-28T07:56:12 IST" name="postCondition" finished-at="2025-06-28T07:56:12 IST" duration-ms="307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB status=SUCCESS method=Test2.testB()[pri:0, instance:script.Test2@783a467b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- script.Test2 -->
+      <class name="script.Test1">
+        <test-method is-config="true" signature="createReport(java.lang.String)[pri:0, instance:script.Test1@7db12bb6]" started-at="2025-06-28T07:55:38 IST" name="createReport" finished-at="2025-06-28T07:55:50 IST" duration-ms="12283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[config.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createReport -->
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.Test1@7db12bb6]" started-at="2025-06-28T07:56:02 IST" name="preCondition" finished-at="2025-06-28T07:56:09 IST" duration-ms="6639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void script.Test1.testA()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[config.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="testA()[pri:0, instance:script.Test1@7db12bb6]" started-at="2025-06-28T07:56:09 IST" name="testA" finished-at="2025-06-28T07:56:10 IST" duration-ms="1075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.Test1@7db12bb6]" started-at="2025-06-28T07:56:10 IST" name="postCondition" finished-at="2025-06-28T07:56:10 IST" duration-ms="275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=Test1.testA()[pri:0, instance:script.Test1@7db12bb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:script.Test1@7db12bb6]" started-at="2025-06-28T07:56:12 IST" name="generateReport" finished-at="2025-06-28T07:56:12 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- script.Test1 -->
+    </test> <!-- Testconfig -->
+  </suite> <!-- Suite -->
+</testng-results>
