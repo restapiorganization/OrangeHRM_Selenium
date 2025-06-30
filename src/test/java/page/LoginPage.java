@@ -7,8 +7,10 @@ public class LoginPage {
 	
 	//declaration
 	private String userName="#input-username";
+	private String password="#input-password";
+	private String goButton=".btn-primary";
 	
-	//intialization
+	//initialization
 	public LoginPage(Page page)
 	{
 		this.page=page;
@@ -19,5 +21,15 @@ public class LoginPage {
 	public void setUserName(String un)
 	{
 		page.locator(userName).fill(un);
+	}
+	
+	public void setPassword(String pw)
+	{
+		page.locator(password).fill(pw);
+	}
+	
+	public void clickGoButton()
+	{
+		page.locator(goButton).click();
 	}
 }
