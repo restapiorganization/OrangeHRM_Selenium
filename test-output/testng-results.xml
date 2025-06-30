@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Invalid username and/or password.]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-06-30T08:42:23 IST" name="Default suite" finished-at="2025-06-30T08:42:26 IST" duration-ms="3090">
+  <suite started-at="2025-06-30T09:03:54 IST" name="Default suite" finished-at="2025-06-30T09:03:57 IST" duration-ms="2707">
     <groups>
       <group name="regression">
-        <method signature="ValidLogin.testValidLogin()[pri:0, instance:script.ValidLogin@6fd83fc1]" name="testValidLogin" class="script.ValidLogin"/>
+        <method signature="InvalidLogin.testInvalidLogin()[pri:0, instance:script.InvalidLogin@6fd83fc1]" name="testInvalidLogin" class="script.InvalidLogin"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2025-06-30T08:42:23 IST" name="Default test" finished-at="2025-06-30T08:42:26 IST" duration-ms="3090">
-      <class name="script.ValidLogin">
-        <test-method is-config="true" signature="createReport(java.lang.String)[pri:0, instance:script.ValidLogin@6fd83fc1]" started-at="2025-06-30T08:42:14 IST" name="createReport" finished-at="2025-06-30T08:42:23 IST" duration-ms="9161" status="PASS">
+    <test started-at="2025-06-30T09:03:54 IST" name="Default test" finished-at="2025-06-30T09:03:57 IST" duration-ms="2707">
+      <class name="script.InvalidLogin">
+        <test-method is-config="true" signature="createReport(java.lang.String)[pri:0, instance:script.InvalidLogin@6fd83fc1]" started-at="2025-06-30T09:03:45 IST" name="createReport" finished-at="2025-06-30T09:03:54 IST" duration-ms="8924" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,11 +24,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.ValidLogin@6fd83fc1]" started-at="2025-06-30T08:42:23 IST" name="preCondition" finished-at="2025-06-30T08:42:24 IST" duration-ms="1108" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.InvalidLogin@6fd83fc1]" started-at="2025-06-30T09:03:54 IST" name="preCondition" finished-at="2025-06-30T09:03:55 IST" duration-ms="1120" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.ValidLogin.testValidLogin()]]>
+                <![CDATA[public void script.InvalidLogin.testInvalidLogin()]]>
               </value>
             </param>
             <param index="1">
@@ -37,26 +40,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testValidLogin()[pri:0, instance:script.ValidLogin@6fd83fc1]" started-at="2025-06-30T08:42:24 IST" name="testValidLogin" finished-at="2025-06-30T08:42:26 IST" duration-ms="1682" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:0, instance:script.InvalidLogin@6fd83fc1]" started-at="2025-06-30T09:03:55 IST" name="testInvalidLogin" finished-at="2025-06-30T09:03:56 IST" duration-ms="1280" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Invalid username and/or password.]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@6fd83fc1]" started-at="2025-06-30T08:42:26 IST" name="postCondition" finished-at="2025-06-30T08:42:26 IST" duration-ms="272" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@6fd83fc1]" started-at="2025-06-30T09:03:56 IST" name="postCondition" finished-at="2025-06-30T09:03:57 IST" duration-ms="278" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:0, instance:script.ValidLogin@6fd83fc1] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:0, instance:script.InvalidLogin@6fd83fc1] output=Invalid username and/or password.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:script.ValidLogin@6fd83fc1]" started-at="2025-06-30T08:42:26 IST" name="generateReport" finished-at="2025-06-30T08:42:27 IST" duration-ms="444" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:script.InvalidLogin@6fd83fc1]" started-at="2025-06-30T09:03:57 IST" name="generateReport" finished-at="2025-06-30T09:03:57 IST" duration-ms="355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-      </class> <!-- script.ValidLogin -->
+      </class> <!-- script.InvalidLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
