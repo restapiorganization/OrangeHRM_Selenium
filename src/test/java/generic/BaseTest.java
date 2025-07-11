@@ -23,6 +23,9 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
+
 public class BaseTest {
 	public static Playwright playwright;
 	public static ExtentReports extent;
@@ -44,6 +47,7 @@ public class BaseTest {
         extent.attachReporter(new ExtentSparkReporter(reportPath+"Spark.html"));
         test0 = extent.createTest("Test0");
         test0.log(Status.INFO,"Initialize Playwright");
+        Allure.step("Initialize Playwright");
 		playwright = Playwright.create();
 	}
 	
@@ -55,7 +59,7 @@ public class BaseTest {
 		 extent.flush();	
 	}
 	
-
+	@Step("Initialize Playwright instance")
 	@Parameters("propertyFile")
 	@BeforeMethod
 	public void preCondition(Method testMethod,@Optional("config.properties") String propertyFile)

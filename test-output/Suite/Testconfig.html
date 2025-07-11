@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Testconfig</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 28 07:56:02 IST 2025</td>
+<td>Started on:</td><td>Tue Jul 08 13:15:05 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9624 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8771 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='script.Test1.testA()'><b>testA</b><br>Test class: script.Test1</td>
+<td title='script.InvalidLogin.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: script.InvalidLogin<br/>
+<a href="#Output-1510535132" onClick='toggleBox("Output-1510535132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1510535132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1510535132">
+Invalid username and/or password.<br/>
+</div>
+</td>
 <td></td>
-<td>1</td>
-<td>script.Test1@7db12bb6</td></tr>
+<td>0</td>
+<td>script.InvalidLogin@49ff7d8c</td></tr>
 <tr>
 <td title='script.Test2.testB()'><b>testB</b><br>Test class: script.Test2</td>
 <td></td>
 <td>0</td>
-<td>script.Test2@783a467b</td></tr>
+<td>script.Test2@2ef14fe</td></tr>
+<tr>
+<td title='script.ValidLogin.testValidLogin()'><b>testValidLogin</b><br>Test class: script.ValidLogin</td>
+<td></td>
+<td>0</td>
+<td>script.ValidLogin@7fb95505</td></tr>
+<tr>
+<td title='script.Test1.testA()'><b>testA</b><br>Test class: script.Test1</td>
+<td></td>
+<td>1</td>
+<td>script.Test1@29526c05</td></tr>
 </table><p>
 </body>
 </html>
