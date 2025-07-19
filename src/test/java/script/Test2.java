@@ -17,6 +17,7 @@ public class Test2 extends BaseTest{
 		String title = page.title();
 		
 		test.log(Status.INFO,"testB:"+title);
+		test.fail("Failed intensionally");
 		
 		//Assert.fail();
 	}
