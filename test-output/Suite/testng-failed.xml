@@ -2,16 +2,29 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="propertyFile" value="resources\qa.properties"/>
     <classes>
-      <class name="script.Test2">
+      <class name="script.VerifyUserTest">
         <methods>
-          <include name="createReport"/>
-          <include name="postCondition"/>
-          <include name="generateReport"/>
-          <include name="testB"/>
-          <include name="preCondition"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="beforeSuite"/>
+          <include name="verifyAdminUserIsPresent"/>
         </methods>
-      </class> <!-- script.Test2 -->
+      </class> <!-- script.VerifyUserTest -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Testconfig(failed)">
+    <parameter name="propertyFile" value="resources\config.properties"/>
+    <classes>
+      <class name="script.VerifyUserTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="beforeSuite"/>
+          <include name="verifyAdminUserIsPresent"/>
+        </methods>
+      </class> <!-- script.VerifyUserTest -->
+    </classes>
+  </test> <!-- Testconfig(failed) -->
 </suite> <!-- Failed suite [Suite] -->

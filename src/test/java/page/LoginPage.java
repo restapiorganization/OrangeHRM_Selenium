@@ -1,56 +1,53 @@
 package page;
 
 
-import org.testng.Reporter;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Page;
+import io.qameta.allure.Description;
+import utils.ExcelUtil;
+import utils.WaitUtils;
 
-public class LoginPage{
-	
-	private Page page;
-	
-	//declaration
-	private String userName="#input-username";
-	private String password="#input-password";
-	private String goButton=".btn-primary";
-	private String errMsg=".error";
-	
-	//initialization
-	public LoginPage(Page page)
-	{
-		this.page=page;
-	}
-	
-	//utilization
-	
-	public void setUserName(String un)
-	{
-		page.locator(userName).fill(un);
-	}
-	
-	public void setPassword(String pw)
-	{
-		page.locator(password).fill(pw);
-	}
-	
-	public void clickGoButton()
-	{
-		page.locator(goButton).click();
-	}
-	
-	
-	public boolean verifyErrMsgIsDisplayed()
-	{
-		try
-		{
-				page.locator(errMsg).waitFor();
-				String text = page.locator(errMsg).textContent();
-				Reporter.log(text,true);//home work--> print it in extent report
-				return true;
-		}
-		catch (Exception e) 
-		{
-				return false;
-		}
-	}
+public class LoginPage {
+    WebDriver driver;
+
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+    }
+    
+    private By usernameField = By.xpath("//input[@name='username']");
+    private By passwordField = By.xpath("//input[@name='password']");
+    private By loginButton   = By.xpath("//button[@type='submit']");
+
+    // Page actions
+    public void enterUsername(String username)
+    {
+        WaitUtils.waitForVisibility(driver, usernameField).sendKeys(username);
+    }
+
+    public void enterPassword(String password)
+    {
+        WaitUtils.waitForVisibility(driver, passwordField).sendKeys(password);
+    }
+
+    public void clickLogin() 
+    {
+        WaitUtils.waitForClickable(driver, loginButton).click();
+    }
+    public String getTitle() 
+    {
+        return driver.getTitle();
+    }
+    
+    @Test(description = "Verify Title from Excel")
+    @Description("Validates OrangeHRM title matches the expected value from Excel")
+    public void verifyTitleFromExcel() {
+        LoginPage login = new LoginPage(driver);
+        String expectedTitle = ExcelUtil.getCellValue("src/test/resources/testdata.xlsx", "Sheet1", 0, 0);
+        Assert.assertEquals(login.getTitle(), expectedTitle, "Title does not match!");
+    }
+
+    
 }

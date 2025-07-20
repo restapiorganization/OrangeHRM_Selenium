@@ -1,13 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
   <test name="Test">
-    <parameter name="propertyFile" value="qa.properties"/>
+    <parameter name="propertyFile" value="resources\qa.properties"/>
     <packages>
       <package name="script"/>
     </packages>
   </test>
   <test name="Testconfig">
-   <parameter name="propertyFile" value="config.properties"/>
+   <parameter name="propertyFile" value="resources\config.properties"/>
     <packages>
       <package name="script"/>
     </packages>

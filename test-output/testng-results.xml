@@ -1,310 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="20" passed="8" failed="0" skipped="0">
+<testng-results ignored="2" total="6" passed="2" failed="2" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Invalid username and/or password.]]>
-    </line>
-    <line>
-      <![CDATA[Invalid username and/or password.]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-07-19T11:04:02 IST" name="Suite" finished-at="2025-07-19T11:04:42 IST" duration-ms="39628">
+  <suite started-at="2025-07-20T17:23:50 IST" name="Suite" finished-at="2025-07-20T17:25:21 IST" duration-ms="91550">
     <groups>
-      <group name="regression">
-        <method signature="InvalidLogin.testInvalidLogin()[pri:0, instance:script.InvalidLogin@56928307]" name="testInvalidLogin" class="script.InvalidLogin"/>
-        <method signature="ValidLogin.testValidLogin()[pri:0, instance:script.ValidLogin@13ad5cd3]" name="testValidLogin" class="script.ValidLogin"/>
-        <method signature="InvalidLogin.testInvalidLogin()[pri:0, instance:script.InvalidLogin@24ba9639]" name="testInvalidLogin" class="script.InvalidLogin"/>
-        <method signature="ValidLogin.testValidLogin()[pri:0, instance:script.ValidLogin@7749bf93]" name="testValidLogin" class="script.ValidLogin"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2025-07-19T11:04:02 IST" name="Test" finished-at="2025-07-19T11:04:31 IST" duration-ms="28452">
-      <class name="script.Test2">
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.Test2@3cdf2c61]" started-at="2025-07-19T11:04:17 IST" name="preCondition" finished-at="2025-07-19T11:04:22 IST" duration-ms="4533" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void script.Test2.testB()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qa.properties]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-07-20T17:23:50 IST" name="Test" finished-at="2025-07-20T17:24:40 IST" duration-ms="50264">
+      <class name="script.VerifyUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:script.VerifyUserTest@764faa6]" started-at="2025-07-20T17:24:15 IST" name="setup" finished-at="2025-07-20T17:24:36 IST" duration-ms="20960" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="testB()[pri:0, instance:script.Test2@3cdf2c61]" started-at="2025-07-19T11:04:22 IST" name="testB" finished-at="2025-07-19T11:04:22 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAdminUserIsPresent()[pri:0, instance:script.VerifyUserTest@764faa6]" started-at="2025-07-20T17:24:36 IST" name="verifyAdminUserIsPresent" description="Verify if &#039;Admin&#039; user is present in Admin &gt; User Management" finished-at="2025-07-20T17:24:40 IST" duration-ms="3429" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Unable to load object repository file]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Unable to load object repository file
+at page.AdminPage.<init>(AdminPage.java:22)
+at script.VerifyUserTest.verifyAdminUserIsPresent(VerifyUserTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.FileNotFoundException: src\test\resources\objectrepo.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at page.AdminPage.<init>(AdminPage.java:19)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testB -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.Test2@3cdf2c61]" started-at="2025-07-19T11:04:22 IST" name="postCondition" finished-at="2025-07-19T11:04:24 IST" duration-ms="1980" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testB status=SUCCESS method=Test2.testB()[pri:0, instance:script.Test2@3cdf2c61] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyAdminUserIsPresent -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:script.VerifyUserTest@764faa6]" started-at="2025-07-20T17:24:40 IST" name="teardown" finished-at="2025-07-20T17:24:40 IST" duration-ms="375" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- script.Test2 -->
-      <class name="script.Test1">
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.Test1@4f0100a7]" started-at="2025-07-19T11:04:10 IST" name="preCondition" finished-at="2025-07-19T11:04:15 IST" duration-ms="4420" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void script.Test1.testA()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qa.properties]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- teardown -->
+      </class> <!-- script.VerifyUserTest -->
+      <class name="script.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:script.LoginPageTest@6581dc0a]" started-at="2025-07-20T17:23:50 IST" name="setup" finished-at="2025-07-20T17:24:11 IST" duration-ms="21481" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="testA()[pri:0, instance:script.Test1@4f0100a7]" started-at="2025-07-19T11:04:15 IST" name="testA" finished-at="2025-07-19T11:04:16 IST" duration-ms="1119" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginPageTitle()[pri:0, instance:script.LoginPageTest@6581dc0a]" started-at="2025-07-20T17:24:11 IST" name="verifyLoginPageTitle" description="Verify OrangeHRM Login Page Title from Excel Data" finished-at="2025-07-20T17:24:15 IST" duration-ms="3374" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.Test1@4f0100a7]" started-at="2025-07-19T11:04:16 IST" name="postCondition" finished-at="2025-07-19T11:04:17 IST" duration-ms="1167" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA status=SUCCESS method=Test1.testA()[pri:0, instance:script.Test1@4f0100a7] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:script.LoginPageTest@6581dc0a]" started-at="2025-07-20T17:24:15 IST" name="teardown" finished-at="2025-07-20T17:24:15 IST" duration-ms="433" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- script.Test1 -->
-      <class name="script.InvalidLogin">
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.InvalidLogin@56928307]" started-at="2025-07-19T11:04:02 IST" name="preCondition" finished-at="2025-07-19T11:04:07 IST" duration-ms="4980" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void script.InvalidLogin.testInvalidLogin()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qa.properties]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="testInvalidLogin()[pri:0, instance:script.InvalidLogin@56928307]" started-at="2025-07-19T11:04:07 IST" name="testInvalidLogin" finished-at="2025-07-19T11:04:09 IST" duration-ms="1431" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Invalid username and/or password.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@56928307]" started-at="2025-07-19T11:04:09 IST" name="postCondition" finished-at="2025-07-19T11:04:10 IST" duration-ms="1632" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:0, instance:script.InvalidLogin@56928307] output=Invalid username and/or password.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- script.InvalidLogin -->
-      <class name="script.ValidLogin">
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.ValidLogin@13ad5cd3]" started-at="2025-07-19T11:04:24 IST" name="preCondition" finished-at="2025-07-19T11:04:28 IST" duration-ms="4767" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void script.ValidLogin.testValidLogin()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qa.properties]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="testValidLogin()[pri:0, instance:script.ValidLogin@13ad5cd3]" started-at="2025-07-19T11:04:28 IST" name="testValidLogin" finished-at="2025-07-19T11:04:30 IST" duration-ms="1364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@13ad5cd3]" started-at="2025-07-19T11:04:30 IST" name="postCondition" finished-at="2025-07-19T11:04:31 IST" duration-ms="867" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:0, instance:script.ValidLogin@13ad5cd3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- script.ValidLogin -->
+        </test-method> <!-- teardown -->
+      </class> <!-- script.LoginPageTest -->
     </test> <!-- Test -->
-    <test started-at="2025-07-19T11:04:31 IST" name="Testconfig" finished-at="2025-07-19T11:04:42 IST" duration-ms="11132">
-      <class name="script.Test2">
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.Test2@53f6fd09]" started-at="2025-07-19T11:04:37 IST" name="preCondition" finished-at="2025-07-19T11:04:38 IST" duration-ms="1466" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void script.Test2.testB()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[config.properties]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-07-20T17:24:40 IST" name="Testconfig" finished-at="2025-07-20T17:25:21 IST" duration-ms="41252">
+      <class name="script.VerifyUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:script.VerifyUserTest@29ca3d04]" started-at="2025-07-20T17:25:01 IST" name="setup" finished-at="2025-07-20T17:25:19 IST" duration-ms="17983" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="testB()[pri:0, instance:script.Test2@53f6fd09]" started-at="2025-07-19T11:04:38 IST" name="testB" finished-at="2025-07-19T11:04:38 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAdminUserIsPresent()[pri:0, instance:script.VerifyUserTest@29ca3d04]" started-at="2025-07-20T17:25:19 IST" name="verifyAdminUserIsPresent" description="Verify if &#039;Admin&#039; user is present in Admin &gt; User Management" finished-at="2025-07-20T17:25:21 IST" duration-ms="1433" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Unable to load object repository file]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Unable to load object repository file
+at page.AdminPage.<init>(AdminPage.java:22)
+at script.VerifyUserTest.verifyAdminUserIsPresent(VerifyUserTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.FileNotFoundException: src\test\resources\objectrepo.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at page.AdminPage.<init>(AdminPage.java:19)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testB -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.Test2@53f6fd09]" started-at="2025-07-19T11:04:38 IST" name="postCondition" finished-at="2025-07-19T11:04:39 IST" duration-ms="476" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testB status=SUCCESS method=Test2.testB()[pri:0, instance:script.Test2@53f6fd09] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyAdminUserIsPresent -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:script.VerifyUserTest@29ca3d04]" started-at="2025-07-20T17:25:21 IST" name="teardown" finished-at="2025-07-20T17:25:21 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- script.Test2 -->
-      <class name="script.Test1">
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.Test1@38aa816f]" started-at="2025-07-19T11:04:34 IST" name="preCondition" finished-at="2025-07-19T11:04:35 IST" duration-ms="1556" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void script.Test1.testA()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[config.properties]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- teardown -->
+      </class> <!-- script.VerifyUserTest -->
+      <class name="script.LoginPageTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:script.LoginPageTest@5bf8fa12]" started-at="2025-07-20T17:23:50 IST" name="beforeSuite" finished-at="2025-07-20T17:23:50 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="testA()[pri:0, instance:script.Test1@38aa816f]" started-at="2025-07-19T11:04:35 IST" name="testA" finished-at="2025-07-19T11:04:36 IST" duration-ms="1099" status="PASS">
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:script.LoginPageTest@5bf8fa12]" started-at="2025-07-20T17:24:40 IST" name="setup" finished-at="2025-07-20T17:24:59 IST" duration-ms="18639" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.Test1@38aa816f]" started-at="2025-07-19T11:04:36 IST" name="postCondition" finished-at="2025-07-19T11:04:37 IST" duration-ms="519" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA status=SUCCESS method=Test1.testA()[pri:0, instance:script.Test1@38aa816f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginPageTitle()[pri:0, instance:script.LoginPageTest@5bf8fa12]" started-at="2025-07-20T17:24:59 IST" name="verifyLoginPageTitle" description="Verify OrangeHRM Login Page Title from Excel Data" finished-at="2025-07-20T17:25:01 IST" duration-ms="2390" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- script.Test1 -->
-      <class name="script.InvalidLogin">
-        <test-method is-config="true" signature="createReport(java.lang.String)[pri:0, instance:script.InvalidLogin@24ba9639]" started-at="2025-07-19T11:03:56 IST" name="createReport" finished-at="2025-07-19T11:04:02 IST" duration-ms="6322" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[config.properties]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:script.LoginPageTest@5bf8fa12]" started-at="2025-07-20T17:25:01 IST" name="teardown" finished-at="2025-07-20T17:25:01 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.InvalidLogin@24ba9639]" started-at="2025-07-19T11:04:31 IST" name="preCondition" finished-at="2025-07-19T11:04:33 IST" duration-ms="1770" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void script.InvalidLogin.testInvalidLogin()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[config.properties]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="testInvalidLogin()[pri:0, instance:script.InvalidLogin@24ba9639]" started-at="2025-07-19T11:04:33 IST" name="testInvalidLogin" finished-at="2025-07-19T11:04:33 IST" duration-ms="629" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Invalid username and/or password.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@24ba9639]" started-at="2025-07-19T11:04:33 IST" name="postCondition" finished-at="2025-07-19T11:04:34 IST" duration-ms="510" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:0, instance:script.InvalidLogin@24ba9639] output=Invalid username and/or password.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:script.InvalidLogin@24ba9639]" started-at="2025-07-19T11:04:42 IST" name="generateReport" finished-at="2025-07-19T11:04:42 IST" duration-ms="369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateReport -->
-      </class> <!-- script.InvalidLogin -->
-      <class name="script.ValidLogin">
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String)[pri:0, instance:script.ValidLogin@7749bf93]" started-at="2025-07-19T11:04:39 IST" name="preCondition" finished-at="2025-07-19T11:04:40 IST" duration-ms="1313" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void script.ValidLogin.testValidLogin()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[config.properties]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="testValidLogin()[pri:0, instance:script.ValidLogin@7749bf93]" started-at="2025-07-19T11:04:40 IST" name="testValidLogin" finished-at="2025-07-19T11:04:41 IST" duration-ms="1281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@7749bf93]" started-at="2025-07-19T11:04:41 IST" name="postCondition" finished-at="2025-07-19T11:04:42 IST" duration-ms="460" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:0, instance:script.ValidLogin@7749bf93] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- script.ValidLogin -->
+        </test-method> <!-- teardown -->
+      </class> <!-- script.LoginPageTest -->
     </test> <!-- Testconfig -->
   </suite> <!-- Suite -->
 </testng-results>

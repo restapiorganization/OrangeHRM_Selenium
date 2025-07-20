@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Lenovo\Desktop\Bhanupraksh-Playwright\Bhanu_Playwright_Framework\b133-afw\testng.xml</span>
+                    <span>C:\Users\Lenovo\Desktop\Bhanupraksh-Playwright\frameworkcreated_for_github\OrangeHRM_Selenium\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.VerifyUserTest" class="method navigator-link" hash-for-method="verifyAdminUserIsPresent">verifyAdminUserIsPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.VerifyUserTest" class="method navigator-link" hash-for-method="verifyAdminUserIsPresent">verifyAdminUserIsPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,42 +123,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="script.Test1" class="method navigator-link" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="script.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="script.Test1" class="method navigator-link" hash-for-method="testA">testA</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="script.Test2" class="method navigator-link" hash-for-method="testB">testB</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="script.Test2" class="method navigator-link" hash-for-method="testB">testB</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="script.InvalidLogin" class="method navigator-link" hash-for-method="testInvalidLogin">testInvalidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="script.InvalidLogin" class="method navigator-link" hash-for-method="testInvalidLogin">testInvalidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="script.ValidLogin" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="script.ValidLogin" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="script.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -154,90 +143,80 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">script.ValidLogin</span>
+              <img src="failed.png"/>
+              <span class="class-name">script.VerifyUserTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
+                  <a name="verifyAdminUserIsPresent">
+                  </a> <!-- verifyAdminUserIsPresent -->
+                  <span class="method-name">verifyAdminUserIsPresent</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to load object repository file
+	at page.AdminPage.&lt;init&gt;(AdminPage.java:22)
+	at script.VerifyUserTest.verifyAdminUserIsPresent(VerifyUserTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.io.FileNotFoundException: src\test\resources\objectrepo.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at page.AdminPage.&lt;init&gt;(AdminPage.java:19)
+	... 29 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify if 'Admin' user is present in Admin > User Management)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
+                  <a name="verifyAdminUserIsPresent">
+                  </a> <!-- verifyAdminUserIsPresent -->
+                  <span class="method-name">verifyAdminUserIsPresent</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Unable to load object repository file
+	at page.AdminPage.&lt;init&gt;(AdminPage.java:22)
+	at script.VerifyUserTest.verifyAdminUserIsPresent(VerifyUserTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.io.FileNotFoundException: src\test\resources\objectrepo.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at page.AdminPage.&lt;init&gt;(AdminPage.java:19)
+	... 29 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify if 'Admin' user is present in Admin > User Management)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">script.Test1</span>
+              <span class="class-name">script.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testA">
-                  </a> <!-- testA -->
-                  <span class="method-name">testA</span>
+                  <a name="verifyLoginPageTitle">
+                  </a> <!-- verifyLoginPageTitle -->
+                  <span class="method-name">verifyLoginPageTitle</span>
+                  <em>
+(Verify OrangeHRM Login Page Title from Excel Data)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testA">
-                  </a> <!-- testA -->
-                  <span class="method-name">testA</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">script.InvalidLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInvalidLogin">
-                  </a> <!-- testInvalidLogin -->
-                  <span class="method-name">testInvalidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInvalidLogin">
-                  </a> <!-- testInvalidLogin -->
-                  <span class="method-name">testInvalidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">script.Test2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testB">
-                  </a> <!-- testB -->
-                  <span class="method-name">testB</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testB">
-                  </a> <!-- testB -->
-                  <span class="method-name">testB</span>
+                  <a name="verifyLoginPageTitle">
+                  </a> <!-- verifyLoginPageTitle -->
+                  <span class="method-name">verifyLoginPageTitle</span>
+                  <em>
+(Verify OrangeHRM Login Page Title from Excel Data)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,7 +224,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\Desktop\Bhanupraksh-Playwright\Bhanu_Playwright_Framework\b133-afw\testng.xml</span>
+            <span class="header-content">C:\Users\Lenovo\Desktop\Bhanupraksh-Playwright\frameworkcreated_for_github\OrangeHRM_Selenium\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -253,35 +232,23 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;propertyFile&quot; value=&quot;qa.properties&quot;/&gt;
+    &lt;parameter name=&quot;propertyFile&quot; value=&quot;resources\qa.properties&quot;/&gt;
     &lt;packages&gt;
       &lt;package name=&quot;script&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;script.Demo1&quot;/&gt;
-      &lt;class name=&quot;script.Demo2&quot;/&gt;
-      &lt;class name=&quot;script.ExcelReading&quot;/&gt;
-      &lt;class name=&quot;script.InvalidLogin&quot;/&gt;
-      &lt;class name=&quot;script.ReportDemo&quot;/&gt;
-      &lt;class name=&quot;script.Test1&quot;/&gt;
-      &lt;class name=&quot;script.Test2&quot;/&gt;
-      &lt;class name=&quot;script.ValidLogin&quot;/&gt;
+      &lt;class name=&quot;script.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;script.VerifyUserTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Testconfig&quot;&gt;
-    &lt;parameter name=&quot;propertyFile&quot; value=&quot;config.properties&quot;/&gt;
+    &lt;parameter name=&quot;propertyFile&quot; value=&quot;resources\config.properties&quot;/&gt;
     &lt;packages&gt;
       &lt;package name=&quot;script&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;script.Demo1&quot;/&gt;
-      &lt;class name=&quot;script.Demo2&quot;/&gt;
-      &lt;class name=&quot;script.ExcelReading&quot;/&gt;
-      &lt;class name=&quot;script.InvalidLogin&quot;/&gt;
-      &lt;class name=&quot;script.ReportDemo&quot;/&gt;
-      &lt;class name=&quot;script.Test1&quot;/&gt;
-      &lt;class name=&quot;script.Test2&quot;/&gt;
-      &lt;class name=&quot;script.ValidLogin&quot;/&gt;
+      &lt;class name=&quot;script.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;script.VerifyUserTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Testconfig --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -295,10 +262,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (8 classes)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">Testconfig (8 classes)</span>
+                <span class="test-name">Testconfig (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -308,18 +275,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">testInvalidLogin</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testValidLogin</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -336,44 +291,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testInvalidLogin')
-data.setCell(0, 2, 'script.InvalidLogin')
-data.setCell(0, 3, 1431);
+data.setCell(0, 1, 'verifyAdminUserIsPresent')
+data.setCell(0, 2, 'script.VerifyUserTest')
+data.setCell(0, 3, 3429);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testValidLogin')
-data.setCell(1, 2, 'script.ValidLogin')
-data.setCell(1, 3, 1364);
+data.setCell(1, 1, 'verifyLoginPageTitle')
+data.setCell(1, 2, 'script.LoginPageTest')
+data.setCell(1, 3, 3374);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testValidLogin')
-data.setCell(2, 2, 'script.ValidLogin')
-data.setCell(2, 3, 1281);
+data.setCell(2, 1, 'verifyLoginPageTitle')
+data.setCell(2, 2, 'script.LoginPageTest')
+data.setCell(2, 3, 2390);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testA')
-data.setCell(3, 2, 'script.Test1')
-data.setCell(3, 3, 1119);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testA')
-data.setCell(4, 2, 'script.Test1')
-data.setCell(4, 3, 1099);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testInvalidLogin')
-data.setCell(5, 2, 'script.InvalidLogin')
-data.setCell(5, 3, 629);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testB')
-data.setCell(6, 2, 'script.Test2')
-data.setCell(6, 3, 9);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testB')
-data.setCell(7, 2, 'script.Test2')
-data.setCell(7, 3, 5);
+data.setCell(3, 1, 'verifyAdminUserIsPresent')
+data.setCell(3, 2, 'script.VerifyUserTest')
+data.setCell(3, 3, 1433);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -384,61 +323,19 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testInvalidLogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Invalid username and/or password.</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testInvalidLogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Invalid username and/or password.</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">script.ValidLogin</span>
+              <span class="ignored-class-name">script.VerifyUserTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">createReport</span>
+                <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">createReport</span>
-                <br/>
-                <span class="ignored-method-name">generateReport</span>
-                <br/>
-                <span class="ignored-method-name">generateReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">script.Test1</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">createReport</span>
-                <br/>
-                <span class="ignored-method-name">createReport</span>
-                <br/>
-                <span class="ignored-method-name">generateReport</span>
-                <br/>
-                <span class="ignored-method-name">generateReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">script.Test2</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">createReport</span>
-                <br/>
-                <span class="ignored-method-name">createReport</span>
-                <br/>
-                <span class="ignored-method-name">generateReport</span>
-                <br/>
-                <span class="ignored-method-name">generateReport</span>
+                <span class="ignored-method-name">beforeSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -450,135 +347,72 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">script.InvalidLogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">script.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">createReport(config.properties)</span>
+                <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition(public void script.InvalidLogin.testInvalidLogin(), qa.properties)</span>
-                <span class="method-start">6357 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">56 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testInvalidLogin</span>
-                <span class="method-start">11430 ms</span>
+                <span class="method-name">verifyLoginPageTitle</span>
+                <span class="method-start">21674 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:0, insta...)</span>
-                <span class="method-start">12876 ms</span>
+                <span class="method-name">teardown</span>
+                <span class="method-start">25068 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">script.Test1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">script.VerifyUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition(public void script.Test1.testA(), qa.properties)</span>
-                <span class="method-start">14512 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">25506 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testA</span>
-                <span class="method-start">18937 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAdminUserIsPresent</span>
+                <span class="method-start">46469 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=testA status=SUCCESS method=Test1.testA()[pri:0, instance:script.Test1@4f0100a7] ou...)</span>
-                <span class="method-start">20068 ms</span>
+                <span class="method-name">teardown</span>
+                <span class="method-start">49908 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">script.Test2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">script.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition(public void script.Test2.testB(), qa.properties)</span>
-                <span class="method-start">21236 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">50318 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testB</span>
-                <span class="method-start">25771 ms</span>
+                <span class="method-name">verifyLoginPageTitle</span>
+                <span class="method-start">68961 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=testB status=SUCCESS method=Test2.testB()[pri:0, instance:script.Test2@3cdf2c61] ou...)</span>
-                <span class="method-start">25784 ms</span>
+                <span class="method-name">teardown</span>
+                <span class="method-start">71355 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">script.ValidLogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">script.VerifyUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition(public void script.ValidLogin.testValidLogin(), qa.properties)</span>
-                <span class="method-start">27766 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">71737 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">32538 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAdminUserIsPresent</span>
+                <span class="method-start">89723 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:0, instance:sc...)</span>
-                <span class="method-start">33908 ms</span>
+                <span class="method-name">teardown</span>
+                <span class="method-start">91165 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.InvalidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(public void script.InvalidLogin.testInvalidLogin(), config.properties)</span>
-                <span class="method-start">34822 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testInvalidLogin</span>
-                <span class="method-start">36595 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:0, insta...)</span>
-                <span class="method-start">37227 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.Test1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(public void script.Test1.testA(), config.properties)</span>
-                <span class="method-start">37742 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testA</span>
-                <span class="method-start">39304 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=testA status=SUCCESS method=Test1.testA()[pri:0, instance:script.Test1@38aa816f] ou...)</span>
-                <span class="method-start">40408 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.Test2</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(public void script.Test2.testB(), config.properties)</span>
-                <span class="method-start">40930 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testB</span>
-                <span class="method-start">42401 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=testB status=SUCCESS method=Test2.testB()[pri:0, instance:script.Test2@53f6fd09] ou...)</span>
-                <span class="method-start">42409 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.ValidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition(public void script.ValidLogin.testValidLogin(), config.properties)</span>
-                <span class="method-start">42887 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">44204 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:0, instance:sc...)</span>
-                <span class="method-start">45490 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.InvalidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">generateReport</span>
-                <span class="method-start">45971 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
